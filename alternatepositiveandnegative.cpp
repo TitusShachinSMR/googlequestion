@@ -18,15 +18,32 @@ for(i=0;i<n;i++)
 {if(a[i]<0){b[t]=a[i];++t;}
 }
 if(a[i]>0){c[p]=a[i];++p;}
-} t=0;p=0;
+} for(i=0;i<n;i++)
+{printf("%d ",a[i]);
+}printf("\n");
+for(i=0;i<l;i++)
+{printf("%d ",b[i]);
+}printf("\n");
+for(i=0;i<n-l;i++)
+{printf("%d ",c[i]);
+}
+printf("\n");
+t=0;p=0;
 for(i=0;i<n;i++)
 { if(i%2==1&&t<=l-1){a[i]=b[t];++t;}
 if(i%2==0&&p<=n-l-1){a[i]=c[p];++p;
 }
+}t=n-l;
+if(l>n-l)
+{for(i=2*(n-l);i<n;i++){a[i]=b[t];t++;}
+}
+p=l;
+if(l<n-l){for(i=2*l;i<n;i++){a[i]=c[p];p++;}
 }
 for(i=0;i<n;i++)
 {printf("%d ",a[i]);
 }
 }
+
 
 
