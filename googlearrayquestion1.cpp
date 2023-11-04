@@ -27,7 +27,7 @@ if((a[i]+sum)==x)
 }
 if(l>0)
 {break;
-}
+}sum=0;
 }
 if(l==0){printf("such subarray is not present");
 }
