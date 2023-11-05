@@ -20,9 +20,9 @@ int main()
  }
  for(i=0;i<l-1;i++)
  {for(j=0;j<l-1-1;j++)
- { if(b[i]>b[j])
- {temp=b[i];
- b[i]=b[j];
+ { if(b[j]>b[j+1])
+ {temp=b[j+1];
+ b[j+1]=b[j];
  b[j]=temp;
  }
  }
